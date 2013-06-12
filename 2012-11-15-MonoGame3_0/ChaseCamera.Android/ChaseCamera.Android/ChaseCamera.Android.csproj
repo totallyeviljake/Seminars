@@ -72,20 +72,8 @@
     <Folder Include="Assets\Content\" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="..\..\ChaseCamera\bin\x86\Debug\Content\Checker_0.xnb">
-      <Link>Assets\Content\Checker_0.xnb</Link>
-    </AndroidAsset>
-    <AndroidAsset Include="..\..\ChaseCamera\bin\x86\Debug\Content\gameFont.xnb">
-      <Link>Assets\Content\gameFont.xnb</Link>
-    </AndroidAsset>
-    <AndroidAsset Include="..\..\ChaseCamera\bin\x86\Debug\Content\Ground.xnb">
-      <Link>Assets\Content\Ground.xnb</Link>
-    </AndroidAsset>
-    <AndroidAsset Include="..\..\ChaseCamera\bin\x86\Debug\Content\Ship.xnb">
-      <Link>Assets\Content\Ship.xnb</Link>
-    </AndroidAsset>
-    <AndroidAsset Include="..\..\ChaseCamera\bin\x86\Debug\Content\ShipDiffuse_0.xnb">
-      <Link>Assets\Content\ShipDiffuse_0.xnb</Link>
+    <AndroidAsset Include="..\SharedContent\EveryoneElse\**\*.*">
+	<Link>Assets\Content\%(RecursiveDir)\%(Filename)%(Extension)</Link>
     </AndroidAsset>
   </ItemGroup>
   <ItemGroup>

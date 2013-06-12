@@ -145,24 +145,8 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    <Content Include="..\ChaseCamera\bin\x86\Debug\Content\Checker_0.xnb">
-      <Link>Content\Checker_0.xnb</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\ChaseCamera\bin\x86\Debug\Content\gameFont.xnb">
-      <Link>Content\gameFont.xnb</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\ChaseCamera\bin\x86\Debug\Content\Ground.xnb">
-      <Link>Content\Ground.xnb</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\ChaseCamera\bin\x86\Debug\Content\Ship.xnb">
-      <Link>Content\Ship.xnb</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\ChaseCamera\bin\x86\Debug\Content\ShipDiffuse_0.xnb">
-      <Link>Content\ShipDiffuse_0.xnb</Link>
+    <Content Include="..\SharedContent\EveryoneElse\**\*.*">
+	<Link>Content\%(RecursiveDir)\%(Filename)%(Extension)</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Game7_TemporaryKey.pfx" />
