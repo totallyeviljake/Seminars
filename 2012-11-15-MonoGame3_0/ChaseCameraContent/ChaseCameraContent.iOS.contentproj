@@ -32,8 +32,6 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
     </Compile>
-    <None Include="Checker.bmp" />
-    <None Include="ShipDiffuse.tga" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.EffectImporter" />
@@ -45,6 +43,18 @@
     <Reference Include="MonoGameContentProcessors">
       <HintPath>ios_deps\MonoGameContentProcessors.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Checker.png">
+      <Name>Checker</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>MGTextureProcessor</Processor>
+    </Compile>
+    <Compile Include="ShipDiffuse.png">
+      <Name>ShipDiffuse</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>MGTextureProcessor</Processor>
+    </Compile>
   </ItemGroup>
   <Import Project="ios_deps\MonoGame.ContentPipeline.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
